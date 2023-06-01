@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bailey's Bent</title>
+    <link rel="shortcut icon" href="images/fav.png">
+    <!--google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!--google fonts -->
+    <!--Style Sheet-->
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--Style Sheet-->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css">
+</head>
+
+<body>
+    <!--Header-->
+    <header class="w-100 float-start position-relative py-3 text-center">
+        <div class="container position-relative">
+            <!-- <a href="" class="back_page"><img src="images/backicon.png" alt="iconimg"></a> -->
+            <a href=""><img src="images/logo.png" class="logo"></a>
+        </div>
+    </header>
+    <!--Header-->
+
+    <!--Body-->
+    <div class="body py-5 w-100 float-start text-center">
+        <form action="">
+            <div class="container">
+                <div id="tab">
+                    <ul class="nextpage_process text-center">
+                        <li class="tab1"><a href="#">My Furkid <span class="step_pagination">(<span
+                                        class="current_step">1</span> of <span
+                                        class="total_inner_step">6</span>)</span></a></li>
+                        <li class="tab2"><a href="#">Health <span class="step_pagination">(<span
+                                        class="current_step">1</span> of <span
+                                        class="total_inner_step">9</span>)</span></a></li>
+                        <li class="tab3"><a href="#">Pawrent details <span class="step_pagination">(<span
+                                        class="current_step">1</span> of <span
+                                        class="total_inner_step">6</span>)</span></a></li>
+                        <li class="tab4"><a href="#">Meal plan <span class="step_pagination">(<span
+                                        class="current_step">1</span> of <span
+                                        class="total_inner_step">1</span>)</span></a></li>
+                        <li class="tab5"><a href="#">Payment</a></li>
+                    </ul>
+
+                    <div class="tab-body">
+                        <div class="tab-content">
+                            <div id="inner_tab">
+                                <div class="inner_tab_body">
+                                    <div class="inner_tab_content">
+                                        <div class="center_content first">
+                                            <img src="images/dogpic1.png" alt="img" class="mt-2 w-100"
+                                                style="max-width: 320px">
+                                            <h2 class="mt-3">Tell us about your Furkid</h2>
+                                            <p>and we will create a personalized meal plan that is designed <br>to meet
+                                                their needs!</p>
+                                            <div class="mb-2">
+                                                <input type="text" class="form-control" id="furkid-name"
+                                                    placeholder="Your Furkid’s name" name="furkid-name">
+                                            </div>
+                                            <!-- <a href="#"><i>+ Add another Furkid</i></a> -->
+                                        </div>
+                                        <button type="button"
+                                            class="btn btn-light rounded-pill text-uppercase fw-bold mt-5 btn-xl inner_next">NEXT<i
+                                                class="fa-solid fa-arrow-right-long ms-3"></i></button>
+                                        <!-- <a href="#" class="innner_previous_btn"><img src="images/backicon.png" alt="iconimg"></a> -->
+                                    </div>
+                                    <div class="inner_tab_content">
+                                        <div class="center_content">
+                                            <h2 class="mt-5 mb-4">What’s <span class="pet_name"></span>’s gender?</h2>
+                                            <div class="d-sm-flex justify-content-center">
+                                                <div class="form-check custom_check position-relative">
+                                                    <input type="radio" class="form-check-input" id="radio1"
+                                                        name="pet-gender" value="boy">
+                                                    <label class="form-check-label" for="radio1">Boy</label>
+                                                </div>
+                                                <div class="form-check custom_check position-relative">
+                                                    <input type="radio" class="form-check-input" id="radio2"
+                                                        name="pet-gender" value="girl">
+                                                    <label class="form-check-label" for="radio2">Girl</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button"
+                                            class="btn btn-light rounded-pill text-uppercase fw-bold mt-5 btn-xl inner_next">NEXT<i
+                                                class="fa-solid fa-arrow-right-long ms-3"></i></button>
+                                        <a href="#" class="innner_previous_btn"><img src="images/backicon.png"
+                                                alt="iconimg"></a>
+                                    </div>
+                                    <div class="inner_tab_content">
+                                        <div class="center_content">
+                                            <h2 class="mt-5 mb-4">What’s <span class="pet_name"></span>’s breed?</h2>
+                                            <div class="d-sm-flex justify-content-center">
+                                                <div class="form-check custom_check position-relative">
+                                                    <input type="radio" class="form-check-input" id="radio1"
+                                                        name="pet-breed" value="Pure breed">
+                                                    <label class="form-check-label" for="radio1">Pure breed</label>
+                                                </div>
+                                                <div class="form-check custom_check position-relative">
+                                                    <input type="radio" class="form-check-input" id="radio2"
+                                                        name="pet-breed" value="Mix breed">
+                                                    <label class="form-check-label" for="radio2">Mix breed</label>
+                                                </div>
+                                                <div class="form-check custom_check position-relative">
+                                                    <input type="radio" class="form-check-input" id="radio3"
+                                                        name="pet-breed" value="Unknown">
+                                                    <label class="form-check-label" for="radio3">Unknown</label>
+                                                </div>
+                                            </div>
+                                            <div class="mt-4" id="pure_breed_select">
+                                                <div class="mb-4">
+                                                    <select id="pure_breed_selectdropdown" class="form-select">
+                                                        <option value="">Select a breed</option>
+                                                        <option value="German Shepheard">German Shepheard</option>
+                                                        <option value="Bulldog">Bulldog</option>
+                                                        <option value="Labrador Retriever">Labrador Retriever</option>
+                                                        <option value="Golden Retriever">Golden Retriever</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="mt-4" id="select_breed">
+                                                <div class="mb-4">
+                                                    <select id="mix_breed_select1" class="form-select">
+                                                        <option value="">Select a breed</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                    </select>
+                                                </div>
+                                                <div class="mb-2">
+                                                    <select id="mix_breed_select2" class="form-select">
+                                                        <option value="">Select a breed</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                    </select>
+                                                    <!-- <input type="text" class="form-control" id="" placeholder="Select a breed" name=""> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button"
+                                            class="btn btn-light rounded-pill text-uppercase fw-bold mt-5 btn-xl inner_next">NEXT<i
+                                                class="fa-solid fa-arrow-right-long ms-3"></i></button>
+                                        <a href="#" class="innner_previous_btn"><img src="images/backicon.png"
+                                                alt="iconimg"></a>
+                                    </div>
+                                    <div class="inner_tab_content">
+                                        <div class="center_content">
+                                            <h2 class="mt-5 mb-4">When is <span class="pet_name"></span>’s birthday?
+                                            </h2>
+                                            <div class="mt-4">
+                                                <div class="mb-3">
+                                                    <input type="text" class="form-control" id="" placeholder="Year"
+                                                        name="birth-year">
+                                                    <label>If you’re unsure, an approximate is okay!</label>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <input type="text" class="form-control" id="" placeholder="Month"
+                                                        name="birth-month">
+                                                    <label>Optional</label>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <input type="text" class="form-control" id="" placeholder="Day"
+                                                        name="birth-date">
+                                                    <label>Optional</label>
+                                                </div>
+                                            </div>
+                                            <div class="baloon1"><img src="images/baloon.png" alt="img"></div>
+                                            <div class="baloon2"><img src="images/baloon.png" alt="img"></div>
+                                        </div>
+                                        <button type="button"
+                                            class="btn btn-light rounded-pill text-uppercase fw-bold mt-5 btn-xl next">NEXT<i
+                                                class="fa-solid fa-arrow-right-long ms-3"></i></button>
+                                        <a href="#" class="innner_previous_btn"><img src="images/backicon.png"
+                                                alt="iconimg"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div id="inner_tab2">
+                                <div class="inner_tab_body">
+                                    <div class="inner_tab_content">
+                                        <div class="center_content">
+                                            <h2 class="mt-5 mb-4">How much does <span class="pet_name"></span> weight?
+                                            </h2>
+                                            <div class="mt-4">
+                                                <div class="input-group mb-3">
+                                                    <input type="number" class="form-control"
+                                                        placeholder="#Name’s weight" name="pet-weight">
+                                                    <span class="input-group-text fw-bold" id="basic-addon2">Kg</span>
+                                                </div>
+                                            </div>
+                                            <div class="weightmachine"><img src="images/weightmachine.png" alt="img">
+                                            </div>
+                                        </div>
+                                        <button type="button"
+                                            class="btn btn-light rounded-pill text-uppercase fw-bold mt-5 btn-xl inner_next">NEXT<i
+                                                class="fa-solid fa-arrow-right-long ms-3"></i></button>
+                                        <a href="#" class="main_previous_btn"><img src="images/backicon.png"
+                                                alt="iconimg"></a>
+                                    </div>
+                                    <div class="inner_tab_content">
+                                        <div class="center_content">
+                                            <h2 class="mt-5 mb-4">Is <span class="pet_name"></span> Neutered?</h2>
+                                            <div class="d-sm-flex justify-content-center">
+                                                <div class="form-check custom_check position-relative">
+                                                    <input type="radio" class="form-check-input" id="pet-neutered1"
+                                                        name="pet-neutered" value="Yes">
+                                                    <label class="form-check-label" for="pet-neutered1">Yes</label>
+                                                </div>
+                                                <div class="form-check custom_check position-relative">
+                                                    <input type="radio" class="form-check-input" id="pet-neutered2"
+                                                        name="pet-neutered" value="No">
+                                                    <label class="form-check-label" for="pet-neutered2">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button"
+                                            class="btn btn-light rounded-pill text-uppercase fw-bold mt-5 btn-xl inner_next">NEXT<i
+                                                class="fa-solid fa-arrow-right-long ms-3"></i></button>
+                                        <a href="#" class="innner_previous_btn"><img src="images/backicon.png"
+                                                alt="iconimg"></a>
+                                    </div>
+                                    <div class="inner_tab_content">
+                                        <div class="center_content">
+                                            <h2 class="mt-5 mb-5">How is <span class="pet_name"></span>’s waistline?
+                                            </h2>
+                                            <div class="d-sm-flex justify-content-center dog-check">
+                                                <div class="form-check">
+                                                    <input type="radio" class="form-check-input" id="radio1"
+                                                        name="optradio" value="option1" checked>
+                                                    <label class="form-check-label"
+                                                        for="radio1"><strong>Skinny</strong><br>
+                                                        Looks bony. Little to no fat on ribs
+                                                    </label>
+                                                    <img src="images/dogpic2.png" alt="img" class="select_dog">
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="radio" class="form-check-input" id="radio1"
+                                                        name="optradio" value="option1">
+                                                    <label class="form-check-label" for="radio1"><strong>Just
+                                                            right</strong><br>
+                                                        Visible waist when viewed from above. Able to feel ribs with
+                                                        minimal fat covering
+                                                    </label>
+                                                    <img src="images/dogpic2.png" alt="img" class="select_dog">
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="radio" class="form-check-input" id="radio1"
+                                                        name="optradio" value="option1">
+                                                    <label class="form-check-label"
+                                                        for="radio1"><strong>Chubby</strong><br>
+                                                        Unable to see waist or ribs. Unable to feel ribs
+                                                    </label>
+                                                    <img src="images/dogpic2.png" alt="img" class="select_dog">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button"
+                                            class="btn btn-light rounded-pill text-uppercase fw-bold mt-5 btn-xl inner_next">NEXT<i
+                                                class="fa-solid fa-arrow-right-long ms-3"></i></button>
+                                        <a href="#" class="innner_previous_btn"><img src="images/backicon.png"
+                                                alt="iconimg"></a>
+                                    </div>
+                                    <div class="inner_tab_content">
+                                        <div class="center_content">
+                                            <h2 class="mt-5 mb-5">How active is <span class="pet_name"></span>?</h2>
+                                            <div class="d-sm-flex justify-content-center dog-check">
+                                                <div class="form-check">
+                                                    <input type="radio" class="form-check-input" id="radio1"
+                                                        name="optradio" value="option1" checked>
+                                                    <label class="form-check-label"
+                                                        for="radio1"><strong>Relaxed</strong><br>
+                                                        Mellow and loves chilling out. 1 walk per day
+                                                    </label>
+                                                    <img src="images/dogpic3.png" alt="img" class="select_dog">
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="radio" class="form-check-input" id="radio1"
+                                                        name="optradio" value="option1">
+                                                    <label class="form-check-label"
+                                                        for="radio1"><strong>Energized</strong><br>
+                                                        Plenty of zoomies, outings and activity at dog runs.
+                                                        1-2 walks a day.
+                                                    </label>
+                                                    <img src="images/dogpic4.png" alt="img" class="select_dog">
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="radio" class="form-check-input" id="radio1"
+                                                        name="optradio" value="option1">
+                                                    <label class="form-check-label"
+                                                        for="radio1"><strong>Sporty</strong><br>
+                                                        Regular outings, play dates and sport.
+                                                        <br>
+                                                        (>3 hours of activity daily)
+
+                                                    </label>
+                                                    <img src="images/dogpic5.png" alt="img" class="select_dog">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button"
+                                            class="btn btn-light rounded-pill text-uppercase fw-bold mt-5 btn-xl inner_next">NEXT<i
+                                                class="fa-solid fa-arrow-right-long ms-3"></i></button>
+                                        <a href="#" class="innner_previous_btn"><img src="images/backicon.png"
+                                                alt="iconimg"></a>
+                                    </div>
+                                    <div class="inner_tab_content">
+                                        <div class="center_content">
+                                            <h2 class="mt-5 mb-4">Does <span class="pet_name"></span> have any
+                                                allergies?</h2>
+                                            <div class="d-sm-flex justify-content-center">
+                                                <div class="form-check custom_check position-relative">
+                                                    <input type="radio" class="form-check-input" id="pet-allergie1"
+                                                        name="pet-allergie" value="Yes">
+                                                    <label class="form-check-label" for="pet-allergie1">Yes</label>
+                                                </div>
+                                                <div class="form-check custom_check position-relative">
+                                                    <input type="radio" class="form-check-input" id="pet-allergie2"
+                                                        name="pet-allergie" value="No">
+                                                    <label class="form-check-label" for="pet-allergie2">No</label>
+                                                </div>
+                                            </div>
+                                            <div id="if_allergies_have">
+                                                <p class="fw-bold text-center mt-5">Select all that apply:</p>
+                                                <div class="d-sm-flex justify-content-center">
+                                                    <div class="form-check custom_check position-relative">
+                                                        <input type="checkbox" class="form-check-input" id="chiken"
+                                                            name="chiken" value="chiken">
+                                                        <label class="form-check-label" for="chiken">Chiken</label>
+                                                    </div>
+                                                    <div class="form-check custom_check position-relative">
+                                                        <input type="checkbox" class="form-check-input" id="beef"
+                                                            name="beef" value="beef">
+                                                        <label class="form-check-label" for="beef">Beef</label>
+                                                    </div>
+                                                    <div class="form-check custom_check position-relative">
+                                                        <input type="checkbox" class="form-check-input" id="pork"
+                                                            name="pork" value="pork">
+                                                        <label class="form-check-label" for="pork">Pork</label>
+                                                    </div>
+                                                </div>
+                                                <div class="d-sm-flex justify-content-center">
+                                                    <div class="form-check custom_check position-relative">
+                                                        <input type="checkbox" class="form-check-input" id="fish-oil"
+                                                            name="fish-oil" value="fish oil">
+                                                        <label class="form-check-label" for="fish-oil">Fish oil</label>
+                                                    </div>
+                                                    <div class="form-check custom_check position-relative">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="sweet-potato" name="sweet-potato" value="sweet-potato">
+                                                        <label class="form-check-label" for="sweet-potato">Sweet
+                                                            potato</label>
+                                                    </div>
+                                                    <div class="form-check custom_check position-relative">
+                                                        <input type="checkbox" class="form-check-input" id="others"
+                                                            name="others-allergies" value="others allergies">
+                                                        <label class="form-check-label" for="radio2">Others</label>
+                                                    </div>
+                                                </div>
+                                                <input type="text" class="form-control mt-3" id=""
+                                                    placeholder="Tell us more if others is selected"
+                                                    name="if-other-allergies" style="max-width: 480px;">
+                                            </div>
+                                        </div>
+                                        <button type="button"
+                                            class="btn btn-light rounded-pill text-uppercase fw-bold mt-5 btn-xl inner_next">NEXT<i
+                                                class="fa-solid fa-arrow-right-long ms-3 inner_next"></i></button>
+                                        <a href="#" class="innner_previous_btn"><img src="images/backicon.png"
+                                                alt="iconimg"></a>
+                                    </div>
+                                    <div class="inner_tab_content">
+                                        <div class="center_content">
+                                            <h2 class="mt-5 mb-4">Does <span class="pet_name"></span> have any health
+                                                challenges?</h2>
+                                            <div class="d-sm-flex justify-content-center">
+                                                <div class="form-check custom_check position-relative">
+                                                    <input type="radio" class="form-check-input"
+                                                        id="pet-health-challenges-yes" name="pet-health-challenges"
+                                                        value="Yes">
+                                                    <label class="form-check-label"
+                                                        for="pet-health-challenges-yes">Yes</label>
+                                                </div>
+                                                <div class="form-check custom_check position-relative">
+                                                    <input type="radio" class="form-check-input"
+                                                        id="pet-health-challenges-no" name="pet-health-challenges"
+                                                        value="No">
+                                                    <label class="form-check-label"
+                                                        for="pet-health-challenges-no">No</label>
+                                                </div>
+                                            </div>
+                                            <div id="health_challenges_to_apply">
+                                                <p class="fw-bold text-center mt-5">Select all that apply:</p>
+                                                <div class="d-sm-flex justify-content-center">
+                                                    <div class="form-check custom_check position-relative">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="skin-itchiness" name="skin-itchiness"
+                                                            value="Skin itchiness">
+                                                        <label class="form-check-label" for="skin-itchiness">Skin
+                                                            itchiness</label>
+                                                    </div>
+                                                    <div class="form-check custom_check position-relative">
+                                                        <input type="checkbox" class="form-check-input" id="IBD"
+                                                            name="IBD" value="IBD">
+                                                        <label class="form-check-label" for="IBD">IBD</label>
+                                                    </div>
+                                                    <div class="form-check custom_check position-relative">
+                                                        <input type="checkbox" class="form-check-input" id="cancer"
+                                                            name="cancer" value="Cancer">
+                                                        <label class="form-check-label" for="cancer">Cancer</label>
+                                                    </div>
+                                                </div>
+                                                <div class="d-sm-flex justify-content-center">
+                                                    <div class="form-check custom_check position-relative">
+                                                        <input type="checkbox" class="form-check-input" id="diabetes"
+                                                            name="diabetes" value="Diabetes">
+                                                        <label class="form-check-label" for="diabetes">Diabetes</label>
+                                                    </div>
+                                                    <div class="form-check custom_check position-relative">
+                                                        <input type="checkbox" class="form-check-input" id="dental"
+                                                            name="dental" value="Dental">
+                                                        <label class="form-check-label" for="dental">Dental</label>
+                                                    </div>
+                                                    <div class="form-check custom_check position-relative">
+                                                        <input type="checkbox" class="form-check-input" id="others"
+                                                            name="other-challenges" value="other-challenges">
+                                                        <label class="form-check-label" for="others">Others</label>
+                                                    </div>
+                                                </div>
+                                                <input type="text" class="form-control mt-3" id=""
+                                                    placeholder="Tell us more if others is selected"
+                                                    name="tell-other-challenges" style="max-width: 480px;">
+                                            </div>
+                                        </div>
+                                        <button type="button"
+                                            class="btn btn-light rounded-pill text-uppercase fw-bold mt-5 btn-xl inner_next">NEXT<i
+                                                class="fa-solid fa-arrow-right-long ms-3 inner_next"></i></button>
+                                        <a href="#" class="innner_previous_btn"><img src="images/backicon.png"
+                                                alt="iconimg"></a>
+                                    </div>
+                                    <div class="inner_tab_content">
+                                        <div class="center_content">
+                                            <h2 class="mt-5">What is Dominic currently eating</h2>
+                                            <p class="form-check-label" for="radio1"><strong>Select all that
+                                                    apply:</strong>
+                                            </p>
+                                            <div id="health_eating">
+                                                <div class="d-flex justify-content-between mt-1">
+                                                    <div class="form-check custom_check position-relative">
+                                                        <input type="radio" class="form-check-input" id="radio_10"
+                                                            name="pet-kibbles" value="Kibbles">
+                                                        <label class="form-check-labefxLayoutAlign=" start stretch""
+                                                            style="width:200px" for="radio_10"><i>Kibbles</i></label>
+                                                    </div>
+                                                    <div class="form-check custom_check position-relative">
+                                                        <input type="radio" class="form-check-input" id="radio_10"
+                                                            name="pet-kibbles" value="Kibbles">
+                                                        <label class="form-check-label" for="radio_10"
+                                                            style="width:200px"><i>Canned</i></label>
+                                                    </div>
+                                                    <div class="form-check custom_check position-relative">
+                                                        <input type="radio" class="form-check-input" id="radio_10"
+                                                            name="pet-kibbles" value="Kibbles">
+                                                        <label class="form-check-label" style="width:200px"
+                                                            for="radio_10"><i>Homemade</i></label>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-evenly mt-2">
+                                                    <div class="form-check custom_check position-relative">
+                                                        <input type="radio" class="form-check-input" id="radio_10"
+                                                            name="pet-kibbles" value="Kibbles">
+                                                        <label class="form-check-label" style="width:200px"
+                                                            for="radio_10"><i>Gently
+                                                                cooked</i></label>
+                                                    </div>
+                                                    <div class="form-check custom_check position-relative">
+                                                        <input type="radio" class="form-check-input" id="radio_10"
+                                                            name="pet-kibbles" value="Kibbles">
+                                                        <label class="form-check-label" style="width:200px"
+                                                            for="radio_10"><i>Raw</i></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="mt-4" id="brand_dropdown">
+                                                <div class="mb-4">
+                                                    <select id="brand_dropdown" class="form-select w-100"
+                                                        style="max-width: none;">
+                                                        <option value=""><i>Name of brand (if applicable)</i></option>
+                                                        <option value="German Shepheard">German Shepheard</option>
+                                                        <option value="Bulldog">Bulldog</option>
+                                                        <option value="Labrador Retriever">Labrador Retriever</option>
+                                                        <option value="Golden Retriever">Golden Retriever</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button"
+                                            class="btn btn-light rounded-pill text-uppercase fw-bold mt-5 btn-xl next">NEXT<i
+                                                class="fa-solid fa-arrow-right-long ms-3"></i></button>
+                                        <a href="#" class="innner_previous_btn"><img src="images/backicon.png"
+                                                alt="iconimg"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div id="inner_tab3">
+                                <div class="inner_tab_body">
+                                    <div class="inner_tab_content">
+                                        <div class="center_content">
+                                            <h2 class="mt-5 mb-4">Tell us more about yourself!</h2>
+                                            <div class="mt-4">
+                                                <div class="mb-3">
+                                                    <input type="text" class="form-control" id=""
+                                                        placeholder="Your Name" name="owner-name">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <input type="email" class="form-control" id="" placeholder="Email"
+                                                        name="owner-email">
+                                                </div>
+                                                <div class="form-check mb-3">
+                                                    <label class="form-check-label text-start">
+                                                        <input class="form-check-input" type="checkbox" name="remember">
+                                                        Receive updates, newsletter from Bailey’s Bento. You can
+                                                        <br>unsubscribe anytime
+
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button"
+                                            class="btn btn-light rounded-pill text-uppercase fw-bold mt-5 btn-xl inner_next">NEXT<i
+                                                class="fa-solid fa-arrow-right-long ms-3"></i></button>
+                                        <a href="#" class="main_previous_btn"><img src="images/backicon.png"
+                                                alt="iconimg"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div id="inner_tab4">
+                                <div class="inner_tab_body">
+                                    <div class="inner_tab_content">
+                                        <div class="center_content">
+                                            <h2 class="mt-5 mb-2">Choose the proteins</h2>
+                                            <p>We recommend a mix to provide variety and to find <span
+                                                    class="pet_name"></span>’s favourite!</p>
+                                            <div class="d-md-flex justify-content-center">
+                                                <div class="form-check proteins_check">
+                                                    <input class="form-check-input" type="checkbox" id="checkproteins1"
+                                                        name="option1" value="something" checked>
+                                                    <label class="form-check-label" for="checkproteins1">
+                                                        <img src="images/fooditem1.png" alt="img" class="mb-2"
+                                                            style="height: 100px;"><br>
+                                                        <strong class="d-inline-block mb-3">Chicken Bento</strong> <br>
+                                                        <span class="d-flex"><i>Includes:</i></span>
+                                                        Ground Chicken (Thigh and Breast), Carrots, Cauliflower, Chicken
+                                                        Gizzard, Chicken Liver, Fish oil, Minerals and Vitamins
+
+                                                    </label>
+                                                </div>
+                                                <div class="form-check proteins_check">
+                                                    <input class="form-check-input" type="checkbox" id="checkproteins2"
+                                                        name="option1" value="something">
+                                                    <label class="form-check-label" for="checkproteins2">
+                                                        <img src="images/fooditem2.png" alt="img" class="mb-2"
+                                                            style="height: 100px;"><br>
+                                                        <strong class="d-inline-block mb-3">Beef Bento</strong> <br>
+                                                        <span class="d-flex"><i>Includes:</i></span>
+                                                        Ground Chicken (Thigh and Breast), Carrots, Cauliflower, Chicken
+                                                        Gizzard, Chicken Liver, Fish oil, Minerals and
+                                                        Vitamins
+
+                                                    </label>
+                                                </div>
+                                                <div class="form-check proteins_check">
+                                                    <input class="form-check-input" type="checkbox" id="checkproteins3"
+                                                        name="option1" value="something">
+                                                    <label class="form-check-label" for="checkproteins3">
+                                                        <img src="images/fooditem3.png" alt="img" class="mb-2"
+                                                            style="height: 100px;"><br>
+                                                        <strong class="d-inline-block mb-3">Pork Bento</strong> <br>
+                                                        <span class="d-flex"><i>Includes:</i></span>
+                                                        Ground Chicken (Thigh and Breast), Carrots, Cauliflower, Chicken
+                                                        Gizzard, Chicken Liver, Fish oil, Minerals and
+                                                        Vitamins
+
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <p class="text-start mt-4 position-relative">
+                                                <i>What are Mineral and Vitamins?</i><a id="mineral_vitamins"
+                                                    href="#"><sup><i class="fa-duotone fa-location-question"
+                                                            style="font-size: 16px;"></i></sup></a>
+                                            </p>
+                                        </div>
+                                        <button type="button"
+                                            class="btn btn-light rounded-pill text-uppercase fw-bold mt-5 btn-xl inner_next">NEXT<i
+                                                class="fa-solid fa-arrow-right-long ms-3"></i></button>
+                                        <a href="#" class="main_previous_btn"><img src="images/backicon.png"
+                                                alt="iconimg"></a>
+                                    </div>
+                                    <div class="inner_tab_content">
+                                        <div class="bento_box">
+                                            <h2 class="mt-5">Recommended daily intake for <span class="pet_name"></span>
+                                            </h2>
+                                            <h2 class="mb-2"><mark>#AMOUNT</mark> calories per day</h2>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="amount_box my-3 text-start my-3">
+                                                        <div class="amount_box_in">
+                                                            <h2>Full Bento Box</h2>
+                                                            <p>
+                                                                Complete and balanced diet for <span
+                                                                    class="pet_name"></span>!<br>
+                                                                We recommend to start with the transition kit if <span
+                                                                    class="pet_name"></span> is new to fresh food
+                                                            </p>
+                                                            <p><i>The full Bento box plan will include</i></p>
+                                                            <ul>
+                                                                <li>100% of daily calories</li>
+                                                                <li><mark># of #size boxes every 4 weeks</mark></li>
+                                                                <li>Delivered every # weeks</li>
+                                                                <li>Option to Pause, Change or Cancel</li>
+                                                            </ul>
+                                                            <p><i>2 weeks transition kit:</i></p>
+                                                            <ul>
+                                                                <li>25% of daily calories for 3 days,</li>
+                                                                <li>50% of daily calories for 3 days,</li>
+                                                                <li>75% of daily calories for 3 days,</li>
+                                                                <li>100% of daily calories for 5 days.</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div>
+                                                            <div class="form-check custom_check position-relative">
+                                                                <input type="radio" class="form-check-input"
+                                                                    id="full-bento-box1" name="full-bento-box"
+                                                                    value="2 weeks transition">
+                                                                <label
+                                                                    class="form-check-label w-auto text-center fw-bold"
+                                                                    for="full-bento-box1">$ for 2 weeks transition kit,
+                                                                    then $ every # weeks
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check custom_check position-relative">
+                                                                <input type="radio" class="form-check-input"
+                                                                    id="full-bento-box2" name="full-bento-box"
+                                                                    value="Skip transition">
+                                                                <label
+                                                                    class="form-check-label w-auto text-center fw-bold"
+                                                                    for="full-bento-box2">Skip transition kit - $ every
+                                                                    # weeks
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="amount_box my-3 text-start my-3">
+                                                        <div class="amount_box_in">
+                                                            <h2>Half Bento Box</h2>
+                                                            <p>50% of daily requirements to mix with current food!<br>
+                                                                We recommend to start with the transition kit if <span
+                                                                    class="pet_name"></span> is new to fresh food
+                                                            </p>
+                                                            <p><i>The half Bento Box plan will include</i></p>
+                                                            <ul>
+                                                                <li>50% of daily calories</li>
+                                                                <li><mark># of #size boxes every 4 weeks</mark></li>
+                                                                <li>Delivered every # weeks</li>
+                                                                <li>Option to Pause, Change or Cancel</li>
+                                                            </ul>
+                                                            <p><i>2 weeks transition kit:</i></p>
+                                                            <ul>
+                                                                <li>25% of daily calories for 3 days,</li>
+                                                                <li>50% of daily calories for 11 days,</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div>
+                                                            <div class="form-check custom_check position-relative">
+                                                                <input type="radio" class="form-check-input"
+                                                                    id="half-bento-box1" name="half-bento-box"
+                                                                    value="Half Bento Box 2 weeks transition">
+                                                                <label
+                                                                    class="form-check-label w-auto text-center fw-bold"
+                                                                    for="half-bento-box1">$ for 2 weeks transition kit,
+                                                                    then $
+                                                                    every # weeks
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check custom_check position-relative">
+                                                                <input type="radio" class="form-check-input"
+                                                                    id="half-bento-box2" name="half-bento-box"
+                                                                    value="Half Bento Box Skip transition">
+                                                                <label
+                                                                    class="form-check-label w-auto text-center fw-bold"
+                                                                    for="half-bento-box2">Skip transition kit - $ every
+                                                                    # weeks
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="text-start mt-5"><i>Why a transition kit?</i> <a
+                                                    id="transition_kit" href="#" style="font-size: 16px;"><sup><i
+                                                            class="fa-duotone fa-location-question"
+                                                            style="font-size: 16px;"></i></sup></a></p>
+                                            <button type="button"
+                                                class="btn btn-light rounded-pill text-uppercase fw-bold mt-5 btn-xl inner_next">NEXT<i
+                                                    class="fa-solid fa-arrow-right-long ms-3"></i></button>
+                                            <a href="#" class="innner_previous_btn"><img src="images/backicon.png"
+                                                    alt="iconimg"></a>
+                                        </div>
+                                    </div>
+                                    <div class="inner_tab_content">
+                                        <div class="center_content">
+                                            <h2 class="mt-5 mb-2">Customize meal plan options</h2>
+                                            <p class="mb-5">Change the number of boxes for easier feeding and
+                                                portioning.</p>
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-start"><strong>Number of boxes per day for <span
+                                                                    class="pet_name"></span></strong></td>
+                                                        <td>
+                                                            <div class="d-sm-flex justify-content-end">
+                                                                <div class="form-check custom_check position-relative">
+                                                                    <input type="radio" class="form-check-input"
+                                                                        id="box-per-day1" name="box-per-day"
+                                                                        value="of boxes">
+                                                                    <label class="form-check-label" for="box-per-day1">#
+                                                                        of boxes</label>
+                                                                </div>
+                                                                <div class="form-check custom_check position-relative">
+                                                                    <input type="radio" class="form-check-input"
+                                                                        id="box-per-day2" name="box-per-day"
+                                                                        value="of boxes">
+                                                                    <label class="form-check-label" for="box-per-day2">#
+                                                                        of boxes</label>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- <tr>
+                                            <td class="text-start"><strong>Number of boxes per day for <span class="pet_name"></span></strong></td>
+                                            <td>
+                                                <div class="d-sm-flex justify-content-end">
+                                                    <div class="form-check custom_check position-relative">
+                                                        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2" checked="">
+                                                        <label class="form-check-label" for="radio2"># of boxes</label>
+                                                    </div>
+                                                    <div class="form-check custom_check position-relative">
+                                                        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+                                                        <label class="form-check-label" for="radio2"># of boxes</label>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr> -->
+                                                    <tr>
+                                                        <td class="text-center" colspan="2">Change delivery frequencies
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-start"><strong>Delivery frequency</strong></td>
+                                                        <td>
+                                                            <div class="d-sm-flex justify-content-end">
+                                                                <div class="form-check custom_check position-relative">
+                                                                    <input type="radio" class="form-check-input"
+                                                                        id="radio2" name="optradio" value="option2"
+                                                                        checked="">
+                                                                    <label class="form-check-label" for="radio2">every 4
+                                                                        weeks</label>
+                                                                </div>
+                                                                <div class="form-check custom_check position-relative">
+                                                                    <input type="radio" class="form-check-input"
+                                                                        id="radio2" name="optradio" value="option2">
+                                                                    <label class="form-check-label" for="radio2">every 2
+                                                                        weeks</label>
+                                                                </div>
+                                                                <div class="form-check custom_check position-relative">
+                                                                    <input type="radio" class="form-check-input"
+                                                                        id="radio2" name="optradio" value="option2">
+                                                                    <label class="form-check-label" for="radio2">every 1
+                                                                        week</label>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <button type="button"
+                                            class="btn btn-light rounded-pill text-uppercase fw-bold mt-5 btn-xl next">NEXT<i
+                                                class="fa-solid fa-arrow-right-long ms-3"></i></button>
+                                        <a href="#" class="innner_previous_btn"><img src="images/backicon.png"
+                                                alt="iconimg"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div id="inner_tab5">
+                                <div class="inner_tab_body">
+                                    <div class="inner_tab_content">
+                                        <div class="all_buttons">
+                                            <div class="row mt-5">
+                                                <div class="col-md-6 me-auto">
+                                                    <a href="" class="custom_btn">Create account</a>
+                                                    <a href="" class="custom_btn">Shipping address</a>
+                                                    <a href="" class="custom_btn">Payment<br>
+                                                        (If starter kit, need to show the second recurring charge)</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="main_previous_btn"><img src="images/backicon.png"
+                                                alt="iconimg"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- ---------------- Modal -----------------  -->
+    <div class="popup_overlay_div modal_1">
+        <div class="popup_content">
+            <div>
+                <a class="close_btn" href="#"><i class="far fa-times"></i></a>
+                <p>Added to ensure that our bento boxes are complete and balance. That means you don’t have to worry
+                    about supplementation, unless required for specific health conditions! Talk to us if you to find out
+                    more.</p>
+                <p>Ingredients: Minerals (Calcium Hydrophosphate, Calcium Carbonate, Salt, Potassium Chloride, Magnesium
+                    Sulphate, Zinc Proteinate, Copper Proteinate, Manganese Proteinate, Potassium Iodide), Vitamins
+                    (Vitamin E Supplement, Thiamine Mononitrate, Vitamin D Supplement)</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup_overlay_div modal_2">
+        <div class="popup_content">
+            <div>
+                <a class="close_btn2" href="#"><i class="far fa-times"></i></a>
+                <p>Unlike humans, dogs typically tend to consume the same food daily, causing their bellies to be
+                    unaccustomed to dietary changes. All our meal plans will start with a starter kit, to support a
+                    gradual transition into Bailey’s Bento!</p>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------- Modal -----------------  -->
+
+
+    <!--Body-->
+    <!--Script-->
+    <script src="vendor/js/jquery.min.js"></script>
+    <script src="vendor/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/js/edit-js.js"></script>
+    <!--Script-->
+</body>
+
+</html>
