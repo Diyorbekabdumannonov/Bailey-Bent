@@ -389,6 +389,12 @@ jQuery(function ($) {
 		}
 	});
 
+	$('button.openPaymentDropdown').click(function (e) {
+		const dropdown = $(e.target).parents('.all_buttons').find(`#${e.target.name}`)
+		console.log(dropdown)
+		dropdown.addClass('d-block').siblings().addClass('d-none')
+	})
+
 	$("input[name='other-challenges']").click(function () {
 		if ($(this).is(':checked') == true) {
 			$('body').find('#health_challenges_to_apply input[name="tell-other-challenges"]').show();
@@ -476,5 +482,4 @@ jQuery(function ($) {
 		e.preventDefault();
 		$('body').find('.modal_2').fadeOut();
 	});
-
 });

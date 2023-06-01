@@ -258,6 +258,43 @@ ul.nextpage_process li.active i {
     justify-content: center;
 }
 
+.payment {
+    color: #3f4f5f;
+    width: 480px;
+}
+
+.payment h5 {
+    font-weight: 600;
+}
+
+.payment .title {
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 36px;
+}
+
+.payment .subtitle {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 48px;
+}
+
+.discount h2 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.footer-title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.discount {
+    margin-top: 48px;
+}
+
 .gender .second {
     border: 1px solid gray;
     border-top: none;
@@ -438,7 +475,7 @@ ul.nextpage_process li.active i {
     background-color: #b6dee7;
     border-color: #95aabe;
 }
- 
+
 .gender .girl {
     background-color: pink;
     border-color: pink;
@@ -539,6 +576,20 @@ a.custom_btn {
     padding: 30px 20px;
     border: 1px #ccc solid;
     margin-bottom: 30px;
+    display: block;
+    background-color: white;
+}
+
+.openPaymentDropdown {
+    width: 100%;
+    float: left;
+    color: #000;
+    padding: 30px 20px;
+    border: 1px #ccc solid !important;
+    margin-bottom: 30px;
+    display: block;
+    background-color: white;
+    outline: none;
 }
 
 /*=========================== sandip css =======================*/
