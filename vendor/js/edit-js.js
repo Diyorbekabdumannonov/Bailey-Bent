@@ -42,10 +42,14 @@ jQuery(function ($) {
 				var isEating = $(this).parents('.inner_tab_content').find('input[name="pet-kibbles"]').is(":checked");
 				var eatingVal = $(this).parents('.inner_tab_content').find('input[name="pet-kibbles"]:checked').val();
 				var isEatingType = $(this).parents('.inner_tab_content').find('#health_eating input[type="radio"]').is(":checked");
+				var brandSelectbox = $('#brand_dropdown').find(":selected").val();
 				if (isEating == false) {
 					alert('Please select eatings');
 				} else if (eatingVal == true && isEatingType == false) {
 					alert('Please select eating type below');
+				}
+				else if (brandSelectbox == '') {
+					alert("Please select breed from below dropdown");
 				}
 				else {
 					$(this).parents('.tab-body').find('.tab-content').eq(getindex).show().siblings().hide();
@@ -236,14 +240,43 @@ jQuery(function ($) {
 			}
 			if (getindex == 6) {
 				var isChallenge = $(this).parents('.inner_tab_content').find('input[name="pet-health-challenges"]').is(":checked");
-				var challengeVal = $(this).parents('.inner_tab_content').find('input[name="pet-health-challenges"]:checked').val();
-				var isChallengeType = $(this).parents('.inner_tab_content').find('#health_challenges_to_apply input[type="checkbox"]').is(":checked");
+				var isChallengeType = $(this).parents('.inner_tab_content').find('input[name="pet-health-challenges"]:checked').val();
+				var challengeVal = $(this).parents('.inner_tab_content').find('#health_challenges_to_apply input[type="checkbox"]').is(":checked");
 				if (isChallenge == false) {
-					alert('Please select eatings');
-				} else if (challengeVal == true && isChallengeType == false) {
-					alert('Please select eating type below');
+					alert('Please select challenges');
+				} else if (challengeVal == false && isChallengeType == "Yes") {
+					alert('Please select challenge type below');
 				}
 				else {
+					$('#tab ul li.tab2').find('.current_step').text(getindex + 1);
+					if (totalSteps2 == (getindex + 1)) {
+						$('#tab ul li.tab2').addClass('completed_step');
+					}
+					$(this).parents('.inner_tab_body').find('.inner_tab_content').eq(getindex).show().siblings().hide();
+				}
+			}
+			if (getindex == 7) {
+				var isFussy = $(this).parents('.inner_tab_content').find('input[name="pet-fussy"]').is(":checked");
+				var fussyVal = $(this).parents('.inner_tab_content').find('input[name="pet-fussy"]:checked').val();
+				var isFussyType = $(this).parents('.inner_tab_content').find('input[type="radion"]').is(":checked");
+				if (isFussy == false) {
+					alert('Please select fusyy');
+				} else if (fussyVal == true && isFussyType == false) {
+					alert('Please select fussy type below');
+				}
+				else {
+					$('#tab ul li.tab2').find('.current_step').text(getindex + 1);
+					if (totalSteps2 == (getindex + 1)) {
+						$('#tab ul li.tab2').addClass('completed_step');
+					}
+					$(this).parents('.inner_tab_body').find('.inner_tab_content').eq(getindex).show().siblings().hide();
+				}
+			}
+			if (getindex == 8) {
+				var isSnack = $(this).parents('.inner_tab_content').find('input[name="snackradio"]').is(":checked");
+				if (isSnack == false) {
+					alert('Please select Snack');
+				} else {
 					$('#tab ul li.tab2').find('.current_step').text(getindex + 1);
 					if (totalSteps2 == (getindex + 1)) {
 						$('#tab ul li.tab2').addClass('completed_step');
@@ -287,6 +320,18 @@ jQuery(function ($) {
 				}
 			}
 			if (getindex == 2) {
+				var fullBox = $(this).parents('.inner_tab_content').find('input[name="pet-plan"]').is(":checked");
+				if (fullBox == false) {
+					alert('Please select the below option');
+				} else {
+					$('#tab ul li.tab4').find('.current_step').text(getindex + 1);
+					if (totalSteps4 == (getindex + 1)) {
+						$('#tab ul li.tab4').addClass('completed_step');
+					}
+					$(this).parents('.inner_tab_body').find('.inner_tab_content').eq(getindex).show().siblings().hide();
+				}
+			}
+			if (getindex == 3) {
 				var fullBentoBox = $(this).parents('.inner_tab_content').find('input[name="full-bento-box"]').is(":checked");
 				if (fullBentoBox == false) {
 					alert('Please select the below option');
